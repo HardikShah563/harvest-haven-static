@@ -8,6 +8,7 @@
     <title>Movie Maven</title>
     <!-- Stylesheet Link -->
     <link rel="stylesheet" href="./static/globals.css">
+    <link rel="stylesheet" href="./static/store.css">
     <!-- Script Tag -->
     <script src="./static/script.js" defer></script>
     <!-- Icons Link -->
@@ -28,14 +29,14 @@
             </button>
 
             <button class="nav-btn">
-                <a href="./store.html">
+                <a href="./movies.html">
                     <i class="fa-solid fa-store icon"></i>
                     <p class="nav-action-label">Store</p>
                 </a>
             </button>
 
             <button class="nav-btn">
-                <a href="./movies.html">
+                <a href="./store.html">
                     <i class="fa-solid fa-cart icon"></i>
                     <p class="nav-action-label">Cart</p>
                 </a>
@@ -65,7 +66,17 @@
     </nav>
 
     <div class="page">
-        <h1 class="title">Store</h1>
+        <div class="store-banner flex">
+            <div class="store-banner-left">
+                <h1 class="title">Save upto 50% off</h1>
+                <a class="black-btn" href="#">Buy Now</a>
+            </div>
+            <div>
+                <img class="store-banner-img" src="./assets/store-banner.png" alt="store banner img">
+            </div>
+        </div>
+        <div class="store"></div>
+        <h1 class="title">Welcome to Harvest Haven</h1>
     </div>
 </body>
 

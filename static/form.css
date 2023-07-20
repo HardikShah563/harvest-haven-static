@@ -7,40 +7,27 @@
 }
 
 .form-left {
-    width: 50vw;
+    width: 60vw;
     background-color: var(--bg-dirty);
 }
 
 .form-right {
-    width: 50vw;
+    width: 40vw;
     background-color: var(--white);
     align-items: center;
 }
 
 .form {
-    width: 30vw;
-    margin: auto auto;
-    border-radius: 12px;
-}
-
-form {
-    margin: 40px auto 0px auto;
-}
-
-.input, .button {
     width: 100%;
-    height: 40px;
-    padding: 10px;
-    font-size: 18px;
-    font-weight: 600;
-    background-color: var(--bg-dirty);
+    margin: 0px 40px;
+    border-radius: 12px;
 }
 
 .input-box {
     display: block;
     width: 100%;
-    margin: auto auto;
-    padding: 5px 10px;
+    margin: auto 10px;
+    padding: 5px 0px;
     font-size: 1rem;
     font-weight: 600;
 }
@@ -52,7 +39,7 @@ form {
     margin: .3rem auto;
     font-size: 16px;
     font-weight: 600;
-    border: 2px solid var(--black);
+    border: none;
     background-color: var(--bg-dirty);
     border-radius: 4px;
 }
@@ -62,26 +49,13 @@ form {
     cursor: pointer;
     color: var(--white);
     background-color: var(--dark-grey);
-    border: 2px solid var(--black);
+    border: none;
     transition: all 200ms ease;
 }
 
 .form-btn:hover {
     color: var(--white);
     background-color: var(--black);
-}
-
-.msg-box {
-    width: 95%;
-    margin: 20px auto;
-    height: 40px;
-    font-size: 1rem;
-    font-weight: 600;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid var(--black);
-    border-radius: 4px;
 }
 
 .below-form {
@@ -91,6 +65,7 @@ form {
 
 .msg {
     text-align: center;
+    padding: 12px;
 }
 
 #red {
@@ -101,7 +76,7 @@ form {
     background-color: var(--form-green);
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 800px) {
     .form-left {
         width: 50vw;
     }
@@ -111,7 +86,9 @@ form {
     }
 
     .form {
-        width: 50vw;
+        width: 100%;
+        margin: 0px 20px 0px 0px;
+        border-radius: 12px;
     }
 }
 
@@ -121,17 +98,24 @@ form {
     }
 
     .form-left {
-        width: 100vw;
+        display: none;
         /* height: 100%; */
     }
 
     .form-right {
         width: 100vw;
-        height: 100%;
-        margin-top: 50px;
     }
 
     .form {
-        width: 350px;
+        width: 80%;
+        margin: auto auto;
+    }
+
+    .input-box {
+        margin: 0px 0px;
+    }
+
+    .below-form {
+        font-size: 12px;
     }
 }
