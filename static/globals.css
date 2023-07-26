@@ -1,43 +1,24 @@
 /* variable css */
 :root {
-    /* primary colors */
-    --white: #ffffff;
-    --grey: #b6b6b6;
-    --hover-grey: #e4e4e4;
-    --light-grey: #c4c3c3;
-    --matt-grey: #6c6c6c;
-    --dark-grey: #404040;
-    --black: #000000;
-    --black-transp: #00000080;
-
     /* pastel colors */
-    --bg: #F5F2EC;
     --bg-dirty: #EEECE8;
-    --bg-black: #171717;
-    --sky-blue: #81cafa;
-    --light-blue: #cce7f8;
-    --very-light-blue: #e1f3ff;
-    --blue: #38C3FE;
-    --light-blue: #68D8FD;
-    --outline-blue: #27ABD9;
-    --green: #2CC386;
-    --pastel-yellow: #FEDC61;
-    --pastel-orange: #FE9246;
-    --outline-yellow: #E8C13A;
-    --outline-orange: #E06A1B;
-    --pastel-red: #fc6976;
-    --violet: #c244e9;
-    --light-violet: #e6c4f0;
-    --form-red: #fd4557d3;
-    --form-green: #2afc46b9;
-    --background: #F5F2EC;
     --scroll: #949494;
 
     /* other variables */
-    --border: 2px;
-    --circle: 60px;
-    --small-radius: 12px;
-    --radius: 18px;
+    --big-radius: 24px;
+    --small-radius: 18px;
+    --border: 2px solid #000000;
+
+    --background: #ffffff;
+    --text: #000000;
+    --text-secondary: #ffffff;
+    --primary: #000000;
+    --secondary: #d4d4d4;
+    --secondary-light: #f2f2f2;
+    --secondary-dark: #575757;
+    --accent: #000000;
+    --error: #fd4557d3;
+    --success: #2afc46b9;
 }
 
 /* Reset all web parameters */
@@ -45,7 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     user-select: none;
 }
 
@@ -112,11 +93,11 @@ nav {
     left: 5vw;
     margin: auto auto;
     padding: 20px 40px;
-    background-color: var(--white);
-    border: var(--border) solid var(--grey);
+    background-color: var(--background);
+    border: var(--border);
     border-top: none;
-    border-bottom-left-radius: var(--radius);
-    border-bottom-right-radius: var(--radius);
+    border-bottom-left-radius: var(--big-radius);
+    border-bottom-right-radius: var(--big-radius);
 }
 
 /* ---- navigation bar logo ---- */

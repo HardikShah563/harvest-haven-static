@@ -4,7 +4,7 @@
     padding: 10px 20px;
     margin: auto auto;
     background-color: var(--bg-dirty);
-    border-radius: var(--radius);
+    border-radius: var(--big-radius);
 }
 
 .store-banner-left .title {
@@ -15,6 +15,90 @@
     width: 250px;
 }
 
+.store {
+    width: 90vw;
+    margin: auto auto;
+    display: grid;
+    /* grid-template-rows: minmax(200px, max-content) repeat(3, 1fr); */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.store-item {
+    height: min-content;
+    background-color: var(--background);
+    border-radius: var(--radius);
+    display: flex;
+    justify-content: space-between;
+    /* border: var(--border); */
+}
+
+.store-item-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-light);
+    width: 120px;
+    height: 120px;
+    border-radius: 8px;
+}
+
+.store-item-img img {
+    width: 100px;
+    height: 100px;
+}
+
+.store-item-text {
+    padding: 10px 20px;
+}
+
+.store-item-title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.store-item-price {
+    color: var(--secondary-dark);
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.quantity {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 8px 8px;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--secondary-light);
+    border-radius: var(--big-radius);
+    overflow: hidden;
+}
+
+.minus, .plus, .qty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--big-radius);
+    font-size: 12px;
+    width: 30px;
+    height: 30px;
+}
+
+.minus {
+    background-color: var(--background);
+    color: var(--text);
+}
+
+.plus {
+    background-color: var(--text);
+    color: var(--background);
+}
+
+.qty {
+    font-size: 20px;
+}
+
 @media (max-width: 700px) {
     .store-banner-left .title {
         font-size: 36px;
@@ -22,6 +106,10 @@
 
     .store-banner-img {
         width: 150px;
+    }
+
+    .store {
+        gap: 20px;
     }
 }
 
@@ -36,5 +124,9 @@
 
     .store-banner-img {
         width: 120px;
+    }
+
+    .store {
+        gap: 10px;
     }
 }
