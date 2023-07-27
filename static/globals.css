@@ -4,11 +4,6 @@
     --bg-dirty: #EEECE8;
     --scroll: #949494;
 
-    /* other variables */
-    --big-radius: 24px;
-    --small-radius: 18px;
-    --border: 2px solid #000000;
-
     --background: #ffffff;
     --text: #000000;
     --text-secondary: #ffffff;
@@ -19,6 +14,11 @@
     --accent: #000000;
     --error: #fd4557d3;
     --success: #2afc46b9;
+
+    /* other variables */
+    --big-radius: 24px;
+    --small-radius: 18px;
+    --border: 2px solid var(--secondary);
 }
 
 /* Reset all web parameters */
@@ -69,20 +69,14 @@ html {
     margin: 10px;
 }
 
+.txt-ctr {
+    text-align: center;
+}
+
 .subtitle {
     font-size: 16px;
     margin: 10px;
 }
-
-.black-btn {
-    width: fit-content;
-    color: var(--white);
-    padding: 10px 20px;
-    margin: 10px 5px;
-    background-color: var(--black);
-    border-radius: 24px;
-}
-
 
 /* ---- navigation bar css ---- */
 nav {
@@ -110,8 +104,8 @@ nav {
 }
 
 .logo label {
-    font-size: 30px;
-    font-weight: 500;
+    font-size: 32px;
+    font-weight: 600;
 }
 
 /* ---- navigation bar buttons ---- */
@@ -133,7 +127,7 @@ nav {
 }
 
 .nav-actions button p {
-    color: var(--dark-grey);
+    color: var(--text);
     font-size: 14px;
 }
 
@@ -141,7 +135,7 @@ nav {
     margin-inline: auto;
     font-size: 22px;
     margin-bottom: 5px;
-    color: var(--black);
+    color: var(--text);
 }
 
 @media (max-width: 700px) {
@@ -156,7 +150,7 @@ nav {
 
     .logo label a {
         text-align: center;
-        font-size: 24px;
+        /* font-size: 24px; */
     }
 
     .nav-actions {
@@ -165,22 +159,17 @@ nav {
         bottom: 0;
         left: 5vw;
         width: 90vw;
-        border: var(--border) solid var(--grey);
-        border-top-left-radius: var(--radius);
-        border-top-right-radius: var(--radius);
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 5px;
         padding-block: 20px;
         box-shadow: 0 -2px 20px hsla(0, 0%, 0%, 0.1);
-        z-index: 1;
-    }
-}
-
-@media (max-width: 400px) {
-    .black-btn {
-        font-size: 14px;
+        z-index: 10;
+        border: var(--border);
+        border-color: var(--secondary);
+        border-top-left-radius: var(--big-radius);
+        border-top-right-radius: var(--big-radius);
     }
 }
 
