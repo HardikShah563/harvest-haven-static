@@ -123,7 +123,7 @@ function storeItem() {
                 <div class="store-item">
                     <div class="flex">
                         <div class="store-item-img">
-                            <img src="./assets/store-banner.png" alt="store-item">
+                            <img src="./assets/${products[i].url}.png" alt="store-item">
                         </div>
                         
                         <div class="store-item-text">
@@ -131,7 +131,7 @@ function storeItem() {
                             ${products[i].name} (${products[i].qty})
                             </p>
                             <p class="store-item-price">
-                                ₹79.99
+                                ₹${products[i].price}
                             </p>
                         </div>
                     </div>
