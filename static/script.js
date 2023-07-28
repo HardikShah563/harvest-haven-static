@@ -149,7 +149,6 @@ function looseItems() {
             `;
             emptyDiv.insertAdjacentHTML("afterbegin", newProductItem);
         }
-        console.log("This works!");
     }
 }
 
@@ -190,7 +189,6 @@ function packagedItems() {
             `;
             emptyDiv2.insertAdjacentHTML("afterbegin", newProductItem);
         }
-        console.log("This works!");
     }
 }
 
