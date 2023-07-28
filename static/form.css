@@ -47,15 +47,15 @@
 .form-btn {
     margin-block: 1rem;
     cursor: pointer;
-    color: var(--white);
-    background-color: var(--dark-grey);
-    border: none;
+    color: var(--background);
+    background-color: var(--text);
+    border: var(--border);
+    border-color: var(--text);
     transition: all 200ms ease;
 }
 
 .form-btn:hover {
-    color: var(--white);
-    background-color: var(--black);
+    background-color: var(--secondary-dark);
 }
 
 .below-form {
@@ -69,11 +69,11 @@
 }
 
 #red {
-    background-color: var(--form-red);
+    background-color: var(--error);
 }
 
 #green {
-    background-color: var(--form-green);
+    background-color: var(--success);
 }
 
 @media (max-width: 800px) {

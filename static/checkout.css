@@ -1,0 +1,48 @@
+.checkout {
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+
+.checkout-form .form {
+    width: 50vw;
+}
+
+.checkout-store {
+    width: 40vw;
+}
+
+.checkout-store .store {
+    grid-template-columns: repeat(1, 40vw);
+}
+
+.checkout-store .store .store-item {
+    margin-block: 20px;
+}
+
+.checkout-store .store .quantity {
+    width: fit-content;
+    height: fit-content;
+    background-color: var(--secondary);
+    margin: auto 0px;
+}
+
+.checkout-store .store .qty {
+    width: fit-content;
+}
+
+@media (max-width: 800px) {
+    .checkout {
+        justify-content: center;
+        flex-wrap: wrap-reverse;
+    }
+
+    .checkout-form .form {
+        width: 80vw;
+    }
+}
+
+@media (max-width: 400px) {
+    .checkout-form .form {
+        width: 90vw;
+    }
+}

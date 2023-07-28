@@ -155,4 +155,12 @@
     .store {
         gap: 10px;
     }
+
+    .store-item-title {
+        font-size: 18px;
+    }
+
+    .store-item-price {
+        font-size: 16px;
+    }
 }
