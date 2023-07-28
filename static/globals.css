@@ -53,7 +53,7 @@ html {
 
 /* common properties */
 .page {
-    padding-top: 100px;
+    padding-block: 100px;
 }
 
 .flex {
@@ -66,7 +66,7 @@ html {
 
 .title {
     font-size: 36px;
-    margin: 10px;
+    margin-block: 40px;
 }
 
 .txt-ctr {
@@ -76,6 +76,24 @@ html {
 .subtitle {
     font-size: 16px;
     margin: 10px;
+}
+
+.black-btn {
+    width: fit-content;
+    margin: 40px auto;
+    padding: 15px 40px;
+    color: var(--background);
+    font-size: 18px;
+    font-weight: 600;
+    background-color: var(--text);
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: all 200ms ease;
+}
+
+.black-btn:hover {
+    scale: 1.05;
 }
 
 /* ---- navigation bar css ---- */

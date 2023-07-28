@@ -114,9 +114,9 @@ products = [{
     url: "cereals"
 }];
 
-let emptyDiv = document.getElementById("store1");
+let emptyDiv = document.getElementById("loose-store");
 
-function storeItem() {
+function looseItems() {
     for (let i = products.length - 1; i >= 0; i--) {
         if (products[i].type === "loose") {
             let newProductItem = `
@@ -153,4 +153,45 @@ function storeItem() {
     }
 }
 
-storeItem();
+looseItems();
+
+let emptyDiv2 = document.getElementById("packaged-store");
+
+function packagedItems() {
+    for (let i = products.length - 1; i >= 0; i--) {
+        if (products[i].type === "packaged") {
+            let newProductItem = `
+                <div class="store-item">
+                    <div class="flex">
+                        <div class="store-item-img">
+                            <img src="./assets/${products[i].url}.png" alt="store-item">
+                        </div>
+                        
+                        <div class="store-item-text">
+                            <p class="store-item-title">
+                            ${products[i].name} (${products[i].qty})
+                            </p>
+                            <p class="store-item-price">
+                                ₹${products[i].price}
+                            </p>
+                        </div>
+                    </div>
+            
+                    <div class="quantity">
+                        <div class="minus">
+                            <i class="fa-solid fa-minus"></i>
+                        </div>
+                        <div class="qty">01</div>
+                        <div class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+                </div>
+            `;
+            emptyDiv2.insertAdjacentHTML("afterbegin", newProductItem);
+        }
+        console.log("This works!");
+    }
+}
+
+packagedItems();
