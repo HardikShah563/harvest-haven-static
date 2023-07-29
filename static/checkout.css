@@ -13,10 +13,11 @@
 
 .checkout-store .store {
     grid-template-columns: repeat(1, 40vw);
+    gap: 10px;
 }
 
 .checkout-store .store .store-item {
-    margin-block: 20px;
+    margin-block: 0px;
 }
 
 .checkout-store .store .quantity {
@@ -27,7 +28,7 @@
 }
 
 .checkout-store .store .qty {
-    width: fit-content;
+    min-width: 40px;
 }
 
 @media (max-width: 800px) {
@@ -36,8 +37,32 @@
         flex-wrap: wrap-reverse;
     }
 
+    .checkout-store {
+        width: 100vw;
+        margin-bottom: 40px;
+    }
+
+    .checkout-store .store {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .checkout-store .store .store-item {
+        margin-block: 0px;
+    }
+
+    .checkout-store .store .store-item .store-item-title {
+        font-size: 20px;
+    }
+
     .checkout-form .form {
         width: 80vw;
+    }
+}
+
+@media (max-width: 650px) {
+    .checkout-store .store {
+        grid-template-columns: repeat(1, 90vw);
     }
 }
 
