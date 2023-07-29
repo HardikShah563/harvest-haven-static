@@ -164,3 +164,67 @@
         font-size: 16px;
     }
 }
+
+/* admin store */
+.category {
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: var(--secondary-light);
+    border: none;
+    border-radius: 20px;
+}
+
+.edit-category {
+    justify-content: center;
+    margin-block: 10px;
+    gap: 10px;
+}
+
+.category .store-item-title {
+    margin-bottom: 0px;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    font-size: 18px;
+    margin-block: 10px;
+}
+
+.item-amt {
+    color: var(--secondary-dark);
+    font-weight: 400;
+    margin-inline: 10px 2px;
+    font-size: 16px;
+}
+
+.item-btn {
+    padding: 10px 20px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text);
+}
+
+#delete {
+    background-color: var(--error);
+}
+
+#edit {
+    background-color: var(--secondary);
+}
+
+.add {
+    justify-content: center;
+    border: 1px dashed var(--secondary-dark);
+    background-color: var(--secondary);
+    cursor: pointer;
+    margin: 0px;
+}
+
+@media (max-width:) {
+    
+}

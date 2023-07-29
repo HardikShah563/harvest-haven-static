@@ -48,13 +48,13 @@ products = [{
     url: "lemon"
 }, {
     name: "BUTTER",
-    qty: "",
+    qty: "500g",
     price: 54.99,
-    type: "packaged",
+    type: "dairy",
     url: "butter"
 }, {
     name: "SLICED BREAD",
-    qty: "",
+    qty: "16 slices",
     price: 54.99,
     type: "packaged",
     url: "bread"
@@ -68,7 +68,7 @@ products = [{
     name: "MILK",
     qty: "500ml",
     price: 54.49,
-    type: "packaged",
+    type: "dairy",
     url: "milk"
 }, {
     name: "FROZEN GREEN PEAS",
@@ -98,7 +98,7 @@ products = [{
     name: "CHEESE SPREAD",
     qty: "250g",
     price: 144.99,
-    type: "packaged",
+    type: "dairy",
     url: "cheese"
 }, {
     name: "CHOCOLATE BAR",
