@@ -223,4 +223,10 @@
     background-color: var(--secondary);
     cursor: pointer;
     margin: 0px;
+    transition: all 200ms ease;
+}
+
+.add:hover {
+    background-color: var(--secondary-dark);
+    border: 1px solid var(--text);
 }
