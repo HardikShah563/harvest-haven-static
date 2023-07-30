@@ -31,6 +31,10 @@
     min-width: 40px;
 }
 
+.checkout-total {
+    justify-content: space-between;
+}
+
 @media (max-width: 800px) {
     .checkout {
         justify-content: center;
