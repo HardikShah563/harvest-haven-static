@@ -69,29 +69,29 @@
 
         <div class="admin-forms">
             <div class="form">
-                <h1 class="title">Delete Category</h1>
-                <h1 class="subtitle">** Note: All Products inside the category will be deleted **</h1>
+                <h1 class="title">Delete Item</h1>
+                <h1 class="subtitle">** Note: The action cannot be revoked, think before deleting **</h1>
 
                 <form action="?" method="post">
                     <div class="input-box">
                         <div class="input msg" id="red">
-                            Category Removed!
+                            Item Removed!
                         </div>
                     </div>
 
                     <div class="input-box">
                         <label 
-                            for="category-name">
-                            Select Category to be deleted
+                            for="item-name">
+                            Select Item to be deleted
                         </label>
 
                         <select 
                             class="input"
-                            name="category-name" 
-                            id="category-name"
+                            name="item-name" 
+                            id="item-name"
                             required>
                             <option value="">-- None --</option>
-                            <option value="loose">For loop priniting all category names</option>
+                            <option value="loose">For loop priniting all item names</option>
                             <option value="loose">Loose Items</option>
                             <option value="packaged">Packaged Items</option>
                             <option value="dairy">Dairy Products</option>
@@ -122,7 +122,7 @@
                         <button 
                             class="form-btn"
                             type="submit">
-                            Delete Category
+                            Delete Item
                         </button>
                     </div>
                 </form>
