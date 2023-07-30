@@ -36,7 +36,7 @@
             </button>
 
             <button class="nav-btn">
-                <a href="./cart.html">
+                <a href="./movies.html">
                     <i class="fa-solid fa-cart-arrow-down icon"></i>
                     <p class="nav-action-label">Cart</p>
                 </a>
@@ -69,13 +69,13 @@
 
         <div class="admin-forms">
             <div class="form">
-                <h1 class="title">Add A New Item</h1>
-                <h1 class="subtitle">A new category won't be created if one already exists</h1>
+                <h1 class="title">Edit Item Details</h1>
+                <h1 class="subtitle">** If you do not wish to edit any detail, leave the field empty **</h1>
 
                 <form action="?" method="post">
                     <div class="input-box">
                         <div class="input msg" id="red">
-                            Item Already Exisits!
+                            Nothing to be changed?
                         </div>
                     </div>
 
@@ -88,9 +88,28 @@
                         <select 
                             class="input"
                             name="category" 
-                            id="category"
-                            required>
+                            id="category">
                             <option value="loose">Loose Items</option>
+                            <option value="packaged">Packaged Items</option>
+                            <option value="dairy">Dairy Products</option>
+                            <option value="sauces">Sauces</option>
+                            <option value="meat">Meat Based</option>
+                            <option value="pulses&grains">Pulses and Grains</option>
+                        </select>
+                    </div>
+
+                    
+                    <div class="input-box">
+                        <label 
+                            for="item-old-name">
+                            Item Name to be edited: 
+                        </label>
+
+                        <select 
+                            class="input"
+                            name="item-old-name" 
+                            id="item-old-name">
+                            <option value="loose">For loop priniting all item names</option>
                             <option value="packaged">Packaged Items</option>
                             <option value="dairy">Dairy Products</option>
                             <option value="sauces">Sauces</option>
@@ -101,18 +120,17 @@
 
                     <div class="input-box">
                         <label 
-                            for="item-name">
-                            New Item Name: 
+                            for="item-new-name">
+                            New Name: 
                         </label>
 
                         <input 
                             class="input"
                             type="text" 
-                            name="item-name" 
-                            id="item-name" 
-                            placeholder="Eg: Maggi"
-                            autocomplete="off"
-                            required
+                            name="item-new-name" 
+                            id="item-new-name" 
+                            placeholder="Eg: Veg Aata Maggi"
+                            autocomplete="off" 
                         >
                     </div>
 
@@ -128,8 +146,7 @@
                             name="item-name" 
                             id="item-name" 
                             placeholder="Eg: 200g/ 500ml/ ..."
-                            autocomplete="off"
-                            required
+                            autocomplete="off" 
                         >
                     </div>
 
@@ -145,8 +162,7 @@
                             name="item-qty" 
                             id="item-qty" 
                             placeholder="Eg: 50"
-                            autocomplete="off"
-                            required
+                            autocomplete="off" 
                         >
                     </div>
 
@@ -161,7 +177,6 @@
                             type="file" 
                             name="item-img" 
                             id="item-img" 
-                            required
                         >
                     </div>
 
@@ -169,7 +184,7 @@
                         <button 
                             class="form-btn"
                             type="submit">
-                            Add Item
+                            Edit Item
                         </button>
                     </div>
                 </form>
