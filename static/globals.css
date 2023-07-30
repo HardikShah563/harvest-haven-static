@@ -57,7 +57,7 @@ html {
 }
 
 .flex {
-    display: flex;
+    display: flex !important;
 }
 
 .gap-5 {
@@ -74,6 +74,10 @@ html {
 
 .txt-ctr {
     text-align: center;
+}
+
+.cur {
+    cursor: pointer !important;
 }
 
 .subtitle {
@@ -204,4 +208,20 @@ nav {
 ::-webkit-scrollbar-thumb {
     background-color: var(--grey);
     /* border-radius: 10px; */
+}
+
+#navy-card {
+    color: #000080;
+}
+
+#blue-card {
+    color: #0000ff;
+}
+
+#red-card {
+    color: #ff0000;
+}
+
+#orange-card {
+    color: #ffa500;
 }
